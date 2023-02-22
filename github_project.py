@@ -1,8 +1,24 @@
+import calendar
+import datetime
+
+today = datetime.datetime.today()
+today = today.strftime("%d/%m/%Y")
+day_of_week = datetime.datetime.today().strftime("%A")
+
 
 def greeting(name):
-	print(f"Hello {name}, welcome to our project!")
+    print(f"Hello {name}, Welcome to our project!")
 
-name = input("What is your name?")
+
+def datetime_request():
+    date_input = input("Would you like to know what the date is? (y/n): ")
+    if date_input.lower() == "y" or date_input.lower() == "yes":
+        print(f"Okay, Today is {day_of_week} {today}")
+    else:
+        print("Okay, Have a great day :)")
+
+
+name = input("What is your name? ")
 
 greeting(name)
-
+datetime_request()
