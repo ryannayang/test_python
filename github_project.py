@@ -21,9 +21,8 @@ def datetime_request():
         print("Okay, Have a great day :)")
 
         
+user_name = input("What is your name? ")
+fav_color = input("What is your favorite color? ")
 
-name = input("What is your name? ")
-color = input("What is your favorite color? ")
-
-greeting(name, color)
+greeting(user_name, fav_color)
 datetime_request()
