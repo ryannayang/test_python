@@ -8,6 +8,7 @@ day_of_week = datetime.datetime.today().strftime("%A")
 
 
 def greeting(name, color):
+    """greet the user and ask for fav color"""
     print(f"Hello {name}, Welcome to our project!")
     sleep(1)
     print(f"{color} is a great color!")
