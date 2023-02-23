@@ -1,13 +1,16 @@
 import calendar
 import datetime
+from time import sleep
 
 today = datetime.datetime.today()
 today = today.strftime("%d/%m/%Y")
 day_of_week = datetime.datetime.today().strftime("%A")
 
 
-def greeting(name):
+def greeting(name, color):
     print(f"Hello {name}, Welcome to our project!")
+    sleep(1)
+    print(f"{color} is a great color!")
 
 
 def datetime_request():
@@ -17,8 +20,10 @@ def datetime_request():
     else:
         print("Okay, Have a great day :)")
 
+        
 
 name = input("What is your name? ")
+color = input("What is your favorite color? ")
 
-greeting(name)
+greeting(name, color)
 datetime_request()
